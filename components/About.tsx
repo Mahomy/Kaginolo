@@ -31,15 +31,16 @@ const About: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          {/* Image Side - Appears second on mobile */}
+          {/* Image Side - Optimized Image Size */}
           <div className="relative mt-2 md:mt-0">
             <AnimatedSection delay={300}>
               <div className="relative rounded-sm overflow-hidden shadow-2xl group">
                 <div className="absolute inset-0 bg-brand-darkbrown/10 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2668&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=800&auto=format&fit=crop" 
                   alt="Chef preparing food with care" 
                   className="w-full h-72 md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
                 />
               </div>
               {/* Decorative Element - Hidden on mobile to save space */}

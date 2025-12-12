@@ -84,14 +84,15 @@ const Contact: React.FC = () => {
             </form>
           </AnimatedSection>
 
-          {/* Info Side with Image Background */}
+          {/* Info Side with Image Background - Optimized */}
           <AnimatedSection delay={200} className="flex flex-col justify-center h-full">
             <div className="relative overflow-hidden rounded-sm shadow-2xl h-full min-h-[500px]">
               {/* Background Image */}
               <img 
-                src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2669&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=75&w=800&auto=format&fit=crop" 
                 alt="Contact us background"
                 className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-brand-darkbrown/90 mix-blend-multiply"></div>

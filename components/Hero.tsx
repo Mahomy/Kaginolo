@@ -12,11 +12,11 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-      {/* Background with Ken Burns Effect */}
+      {/* Background with Ken Burns Effect - Optimized Image Size */}
       <div className="absolute inset-0 z-0">
         <div 
           className="w-full h-full bg-cover bg-center animate-ken-burns"
-          style={{ backgroundImage: 'url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI6BfoAI7t8Kh0hQCbMQZTrFqkQEZMnRMuOPC_6K68FVkz9DbMdrwVoLIAs1ANNyNqFSwMLNN1fW5wuvJewvYpvQwmmkK15Gk5rP_OfMpLpLRJsmm6isFb2EXS-jHd3dW9w-X2GEkU3fOxR8mDG2-n63EODxX9ODBlaKCwDsGUHURQitsbg4syKFbrmfU/s1536/Example%202.png")' }}
+          style={{ backgroundImage: 'url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI6BfoAI7t8Kh0hQCbMQZTrFqkQEZMnRMuOPC_6K68FVkz9DbMdrwVoLIAs1ANNyNqFSwMLNN1fW5wuvJewvYpvQwmmkK15Gk5rP_OfMpLpLRJsmm6isFb2EXS-jHd3dW9w-X2GEkU3fOxR8mDG2-n63EODxX9ODBlaKCwDsGUHURQitsbg4syKFbrmfU/s1280/Example%202.png")' }}
         ></div>
         <div className="absolute inset-0 bg-black/60 z-10"></div>
       </div>

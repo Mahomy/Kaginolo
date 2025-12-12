@@ -7,21 +7,21 @@ const services: ServiceItem[] = [
     title: "Corporate Catering",
     description: "Elevate your business events with our professional catering solutions. Ideal for board meetings, large conferences, office lunches, and training workshops.",
     features: ["Reliable Timing", "Platters & Lunch Boxes", "Professional Presentation"],
-    image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=2670&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=75&w=600&auto=format&fit=crop",
     isPopular: false
   },
   {
     title: "Wedding Catering",
     description: "Create unforgettable memories with our specialized wedding services. From full-course meals and elegant buffets to bespoke dessert tables and bar services.",
     features: ["Full Event Management", "Custom Cake Tables", "Elegant Bar Service"],
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2670&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=75&w=600&auto=format&fit=crop",
     isPopular: true
   },
   {
     title: "Social & Private Events",
     description: "Celebrate life's milestones with ease. Perfect for birthday parties, baby showers, anniversaries, and graduations. We offer flexible menus to suit any theme.",
     features: ["Flexible Menus", "Intimate Settings", "Dietary Accommodations"],
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=2670&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=75&w=600&auto=format&fit=crop",
     isPopular: false
   }
 ];
@@ -60,6 +60,7 @@ const Services: React.FC = () => {
                         src={service.image} 
                         alt={service.title} 
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
                     />
                 </div>
 

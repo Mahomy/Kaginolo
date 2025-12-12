@@ -2,21 +2,21 @@ import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
 const images = [
-  // Client provided images
-  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH7je7hPMBgeAn9_6FY0i8BWtWSTe38C3PGOUjuIqQ7tLKJosluOHrs-jnR_Rt-eMf97jgWJTw9gsQFr135wUBp9Dwnrd80B3l-YWfug5IDDFLn_eL4U4Tnh_twSMaRbnIUlx3a3h4mb9RGg9xfkLDtsb2fUnI77AzM4mcPSV0f7hAO-ulmp3R-Z_0ltk/s1280/1.jpg",
+  // Client provided images - optimized paths if possible, otherwise kept as is
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH7je7hPMBgeAn9_6FY0i8BWtWSTe38C3PGOUjuIqQ7tLKJosluOHrs-jnR_Rt-eMf97jgWJTw9gsQFr135wUBp9Dwnrd80B3l-YWfug5IDDFLn_eL4U4Tnh_twSMaRbnIUlx3a3h4mb9RGg9xfkLDtsb2fUnI77AzM4mcPSV0f7hAO-ulmp3R-Z_0ltk/s640/1.jpg",
   "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrWeXTYxr0Zbp4WiCHxy0-dV6PMDyI6eTEr5LAXlGzFStPMecPeSFIMjrd7ZnZ3eXQMbdNJAnie7nVEXc6gU5T64Qo6yJgZs6ceVkexlaFHaTD30C6_vaqiE2zgfdh9kSgKSpgGRMhjn6F6DZnBAqaQnjfbVdKWwLKq8vWW-vvQ6ZX42MPR8BDs9gMYjY/s320/2.jpg",
-  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdaU5GSbfhp5xTo3c7ITLmsMESy95o9seSJJwgsjRB2-KOYZulJwtPLUSfULo9haab5XYBtiJMl1NVlv1hnu658AWvnfWOSCpVTEspDR-AqYwdXlESL_M_xrbFvLdeQDjjpCWJrlcyeBRz1nopAazrrm7PdGScUls3xGRtOKJY4ixpwNpvNNYf-j6i6QM/s1280/3.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdaU5GSbfhp5xTo3c7ITLmsMESy95o9seSJJwgsjRB2-KOYZulJwtPLUSfULo9haab5XYBtiJMl1NVlv1hnu658AWvnfWOSCpVTEspDR-AqYwdXlESL_M_xrbFvLdeQDjjpCWJrlcyeBRz1nopAazrrm7PdGScUls3xGRtOKJY4ixpwNpvNNYf-j6i6QM/s640/3.jpg",
   
   // Reliable Unsplash images (Optimized size)
-  "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800", // Catering Kitchen
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", // Food Spread
-  "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800", // Cake/Dessert
-  "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Drinks
-  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800", // Fine Dining
-  "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800", // Healthy Food
-  "https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&q=80&w=800", // Buffet
-  "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=800", // Plating (Replaced)
-  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800", // Event Hall
+  "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=60&w=500", // Catering Kitchen
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=60&w=500", // Food Spread
+  "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=60&w=500", // Cake/Dessert
+  "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=60&w=500", // Drinks
+  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=60&w=500", // Fine Dining
+  "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=60&w=500", // Healthy Food
+  "https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&q=60&w=500", // Buffet
+  "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=60&w=500", // Plating (Replaced)
+  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=60&w=500", // Event Hall
 ];
 
 const Gallery: React.FC = () => {

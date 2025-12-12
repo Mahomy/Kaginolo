@@ -44,12 +44,13 @@ const features: ValueProp[] = [
 const WhyChooseUs: React.FC = () => {
   return (
     <section id="why-us" className="py-24 bg-brand-black relative overflow-hidden scroll-mt-24">
-      {/* Background Image */}
+      {/* Background Image - Optimized */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2670&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=60&w=1280&auto=format&fit=crop" 
           alt="Elegant event background" 
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-brand-black/90 backdrop-blur-sm"></div>
       </div>
