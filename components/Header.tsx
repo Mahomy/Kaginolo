@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         <a 
           href="#home" 
           onClick={(e) => handleNavClick(e, '#home')}
-          className="flex items-center"
+          className="flex items-center cursor-pointer"
         >
           <img 
             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1pojMDXKsbatCtGVZn5nQFWF_2iD1qtMUHGmfPoQ_cqM_MdpHYNQqJLU_ZeomidYGrgkr2uUR-cetkJd_xswzxV2XycI2Fe2fnrT1ztW7vLk9z2LC4wWAIf5WhJYPthI0EylsqE30Ye5QFpIJSuA1mCL_19WmS0tDhtUEVogl4oUTRKIg1aNeiuxDnM0/s200/Kaginolo%20logo.png" 
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
             >
               {link.label}
             </a>
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="px-5 py-2 border border-white text-white hover:bg-white hover:text-brand-black transition-colors duration-300 uppercase text-xs tracking-widest font-bold"
+            className="px-5 py-2 border border-white text-white hover:bg-white hover:text-brand-black transition-colors duration-300 uppercase text-xs tracking-widest font-bold cursor-pointer"
           >
             Get Quote
           </a>
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-2xl font-serif text-white hover:text-brand-gray transition-colors"
+              className="text-2xl font-serif text-white hover:text-brand-gray transition-colors cursor-pointer"
             >
               {link.label}
             </a>
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="mt-4 px-8 py-3 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors"
+            className="mt-4 px-8 py-3 bg-white text-brand-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors cursor-pointer"
           >
             Get Quote
           </a>
