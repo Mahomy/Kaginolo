@@ -3,15 +3,15 @@ import AnimatedSection from './AnimatedSection';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 md:py-32 bg-brand-black scroll-mt-24">
+    <section id="about" className="py-16 md:py-32 bg-brand-black scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           
-          {/* Content Side */}
-          <div className="order-2 md:order-1">
+          {/* Content Side - Text appears first on mobile for better UX */}
+          <div>
             <AnimatedSection>
               <h2 className="text-sm font-bold text-brand-gray tracking-widest uppercase mb-3">Who We Are</h2>
-              <h3 className="text-3xl md:text-4xl font-serif text-white mb-8">Compassionate catering for life's most significant moments.</h3>
+              <h3 className="text-3xl md:text-4xl font-serif text-white mb-6 md:mb-8">Compassionate catering for life's most significant moments.</h3>
             </AnimatedSection>
             
             <AnimatedSection delay={200}>
@@ -31,18 +31,18 @@ const About: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          {/* Image Side */}
-          <div className="order-1 md:order-2 relative">
+          {/* Image Side - Appears second on mobile */}
+          <div className="relative mt-2 md:mt-0">
             <AnimatedSection delay={300}>
               <div className="relative rounded-sm overflow-hidden shadow-2xl group">
                 <div className="absolute inset-0 bg-brand-darkbrown/10 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2668&auto=format&fit=crop" 
                   alt="Chef preparing food with care" 
-                  className="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-72 md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              {/* Decorative Element */}
+              {/* Decorative Element - Hidden on mobile to save space */}
               <div className="absolute -bottom-6 -left-6 w-full h-full border-2 border-brand-gray/30 z-0 hidden md:block"></div>
             </AnimatedSection>
           </div>
