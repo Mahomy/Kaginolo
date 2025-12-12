@@ -2,15 +2,21 @@ import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
 const images = [
-  "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2670&auto=format&fit=crop", // Catering setup
-  "https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=2600&auto=format&fit=crop", // Wedding table
-  "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=2600&auto=format&fit=crop", // Cake
-  "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2669&auto=format&fit=crop", // Drinks
-  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2670&auto=format&fit=crop", // Fine dining
-  "https://images.unsplash.com/photo-1576867757603-05b134ebc379?q=80&w=2670&auto=format&fit=crop", // Buffet Line
-  "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2670&auto=format&fit=crop", // Appetizers
-  "https://images.unsplash.com/photo-1530103862676-de3c9a59af57?q=80&w=2670&auto=format&fit=crop", // Outdoor
-  "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=2671&auto=format&fit=crop", // Curry/Food
+  // Client provided images
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH7je7hPMBgeAn9_6FY0i8BWtWSTe38C3PGOUjuIqQ7tLKJosluOHrs-jnR_Rt-eMf97jgWJTw9gsQFr135wUBp9Dwnrd80B3l-YWfug5IDDFLn_eL4U4Tnh_twSMaRbnIUlx3a3h4mb9RGg9xfkLDtsb2fUnI77AzM4mcPSV0f7hAO-ulmp3R-Z_0ltk/s1280/1.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrWeXTYxr0Zbp4WiCHxy0-dV6PMDyI6eTEr5LAXlGzFStPMecPeSFIMjrd7ZnZ3eXQMbdNJAnie7nVEXc6gU5T64Qo6yJgZs6ceVkexlaFHaTD30C6_vaqiE2zgfdh9kSgKSpgGRMhjn6F6DZnBAqaQnjfbVdKWwLKq8vWW-vvQ6ZX42MPR8BDs9gMYjY/s320/2.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdaU5GSbfhp5xTo3c7ITLmsMESy95o9seSJJwgsjRB2-KOYZulJwtPLUSfULo9haab5XYBtiJMl1NVlv1hnu658AWvnfWOSCpVTEspDR-AqYwdXlESL_M_xrbFvLdeQDjjpCWJrlcyeBRz1nopAazrrm7PdGScUls3xGRtOKJY4ixpwNpvNNYf-j6i6QM/s1280/3.jpg",
+  
+  // Reliable Unsplash images (Optimized size)
+  "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800", // Catering Kitchen
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", // Food Spread
+  "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800", // Cake/Dessert
+  "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Drinks
+  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800", // Fine Dining
+  "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800", // Healthy Food
+  "https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&q=80&w=800", // Buffet
+  "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&q=80&w=800", // Plating (Replaced)
+  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800", // Event Hall
 ];
 
 const Gallery: React.FC = () => {
